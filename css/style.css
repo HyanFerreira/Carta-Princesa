@@ -1,12 +1,12 @@
 :root{
     --primary: #fff;
-    --bg-color: rgb(5, 53, 61);
+    --bg-color: rgb(0, 0, 0);
     --bg-envelope-color: #f5edd1;
     --envelope-tab: #ecdeb8;
     --envelope-cover: #e6cfa7;
     --shadow-color: rgba(0, 0, 0, 0.2);
-    --text-color: #444;
-    --heart-color: rgb(255, 0, 0);
+    --text-color: rgb(0, 0, 0);
+    --heart-color: rgb(104, 0, 0);
 }
 
 body{
@@ -17,6 +17,11 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+p{
+    margin: 0;
+    padding-top: 5px;
 }
 
 .container{
@@ -40,7 +45,7 @@ body{
     content: '';
     position: absolute;
     z-index: 2;
-    border-top: 130px solid var(--envelope-tab);
+    border-top: 131px solid var(--envelope-tab);
     border-right: 150px solid transparent;
     border-left: 150px solid transparent;
     top: 0;
@@ -111,7 +116,7 @@ body{
 }
 
 .flap > .envelope::before{
-    z-index: 0;
+    z-index: 0 !important;
     transform: rotateX(180deg);
 }
 
