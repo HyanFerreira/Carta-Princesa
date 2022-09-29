@@ -118,7 +118,7 @@ p{
 }
 
 .flap > .envelope .letter{
-    bottom: 100px;
+    bottom: 110px;
     transform: scale(1.5);
     transition-delay: 1s;
 }
